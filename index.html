@@ -88,7 +88,7 @@
                       </li>
                     </ul>
                   </div>
-                  <img src="./images/logo2.png" alt="">
+                  <img class="hidden lg:block" src="./images/logo2.png" alt="">
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1 text-base text-[#707070] space-x-8">
@@ -132,7 +132,7 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn bg-[#B68C5A] text-lg font-semibold text-white">Free Consultation</a>
+                  <a class="btn bg-[#B68C5A] lg:text-lg font-semibold text-white">Free Consultation</a>
                 </div>
               </div>
         </nav>
@@ -142,7 +142,7 @@
             <div>
                 <h1 class="font-eb-garamond font-extrabold text-7xl text-white text-center">We Provide Effective <br>Legal Solutions</h1>
                 <h2 class="text-base text-[#E7E7E7] lg:w-6/12 text-center mx-auto mt-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</h2>
-                <div class="flex items-center gap-6 justify-center mt-6">
+                <div class="flex flex-col lg:flex-row items-center gap-6 justify-center mt-6">
                     <input class="lg:w-[500px] h-[64px] rounded-lg pl-5" type="text" placeholder="Search your services">
                     <div class="btn font-semibold text-xl text-white bg-[#B68C5A] border-none">Search</div>
                 </div>
@@ -155,7 +155,7 @@
     <main>
       
       <!-- The Legal Practice Area -->
-      <section class="container mx-auto lg:w-full lg:my-32 my-16">
+      <section class="container mx-auto lg:w-full lg:my-32 my-16 hidden lg:block">
         <h1 class="font-extrabold text-[2.5rem] text-[#414040] text-center">The Legal Practice Area</h1>
         <h2 class="text-center text-base text-[#707070] lg:w-6/12 mx-auto mt-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</h2>
         <!-- Law Container -->
@@ -208,7 +208,43 @@
     </main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer class="bg-black">
+      <footer class="footer text-base-content mx-auto p-10 container flex py-32 flex-col lg:flex-row gap-14 lg:gap-0">
+        <nav class="flex-1">
+          <img src="./images/logo.png" alt="">
+          <p class="text-base text-[#CFCFCF] mt-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        </nav>
+        <nav class="flex-1 lg:pl-32">
+          <h6 class="font-extrabold text-2xl text-white mb-12">Useful Link</h6>
+          <a class="cursor-pointer text-base text-[#CFCFCF] hover:text-white">Homes</a>
+          <a class="cursor-pointer text-base text-[#CFCFCF] hover:text-white">About Us</a>
+          <a class="cursor-pointer text-base text-[#CFCFCF] hover:text-white">Cases</a>
+          <a class="cursor-pointer text-base text-[#CFCFCF] hover:text-white">Blog</a>
+          <a class="cursor-pointer text-base text-[#CFCFCF] hover:text-white">Contact Us</a>
+        </nav>
+        <nav class="flex-1">
+          <h6 class="font-extrabold text-2xl text-white mb-12">Contact Now</h6>
+          <a class="cursor-pointer text-base text-[#CFCFCF] hover:text-white">555 4th 5t NW, Washington <br>DC 20530, United States</a>
+          <a class="cursor-pointer text-base text-[#CFCFCF] hover:text-white">+88 01750 000 000 <br>+88 01750 000 000</a>
+          <a class="cursor-pointer text-base text-[#CFCFCF] hover:text-white">info@gmail.com <br>info@gmail.com</a>
+        </nav>
+        <form class="flex-1">
+          <h6 class="font-extrabold text-2xl text-white mb-12">Subscribe</h6>
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="text-base text-[#CFCFCF]">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</span>
+            </label>
+            <div class="join mt-6">
+              <input
+                type="text"
+                placeholder="Email Address"
+                class="input input-bordered join-item" />
+              <button class="btn bg-[#B68C5A] border-none join-item"><i class="fa-regular fa-paper-plane"></i></button>
+            </div>
+          </fieldset>
+        </form>
+      </footer>
+    </footer>
 
 </body>
 </html>
